@@ -1,0 +1,48 @@
+<div class="container main">
+  <div class="container text-center">
+    <br>
+    <h1 >Shingeki no quizzjin</h1>
+    <br>
+    <h1 id="subtitulo">¿Qué personaje de shingeki eres?</h1>
+    <br>
+    <button class="btn btn-light " id="botonEmpezar" (click)="boton =true" (click)="botonShow()" style="background-color: rgb(232, 246, 106);">¡Empezar!</button>
+  </div>
+  
+  <div class="container" data-aos="fade-up" *ngIf="boton" id="questions">
+    <br>
+    <div class="text-center"  id="secondQuestion" style=" text-align: center;">
+  
+      <h3 id="question">¿Te consideras una persona aventurera? </h3>
+      
+        <div class="" id="secondQuestion">
+          <div> 
+            <input type="radio" id="male" name="question" (click)="clean()" value="si">
+            <label id="label" for="male">Si</label>
+        </div>
+        <div>  
+            <input type="radio" id="female" name="question" (click)="clean()" value="no">
+            <label id="label" for="female">No</label></div>
+          <div>
+            <input type="radio" id="other" name="question" (click)="clean()" value="nose">
+            <label id="label" for="other">No sé</label>
+          </div>
+        </div>
+      
+        <button class="btn btn-light mt-3" id="buttone" (click)="responder()" style="background-color: rgb(232, 246, 106);"> ¡Siguiente!</button>
+        
+    </div>
+  
+  </div>
+  
+  <div class="container text-center">
+    <h1 id="resultado"></h1>
+    <div class="container" id="imgContainer" style="width: 50%; height: 50%; text-align: center;">
+  
+    </div>
+    <div class="container" id="descripcion"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
