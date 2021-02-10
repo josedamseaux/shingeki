@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('poster.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:rgb(235, 255, 144);
+    background-size: 50% 80%;
+    background-position: center;
+    background-color: black;
+
+}
+html, body {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+  }
+image {
+    display:block;
+}
+h1, h3, label, p {
+    text-shadow: 1px 6px rgb(24, 22, 22);
+    font-family: 'Bangers', cursive;
+}
+button {
+  font-family: 'Bangers', cursive;
+
+
+}
+
+/*# sourceMappingURL=styles.css.map*/
